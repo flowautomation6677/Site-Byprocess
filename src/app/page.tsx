@@ -194,7 +194,7 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row gap-8 relative items-start">
                {[
-                 { step: "01", title: "Raio-X da Operação", text: "Mapeamos onde o seu dinheiro está vazando e onde há fricção no fechamento." },
+                 { step: "01", title: "Raio-X da Operação", text: "Mapeamos seus processos com metodologias internacionais, entendendo todo o gargalo da sua operação" },
                  { step: "02", title: "Arquitetura Sob Medida", text: "Desenhamos as integrações e processos ideais. Cada ferramenta no seu lugar exato." },
                  { step: "03", title: "A Virada de Chave", text: "A implantação acontece ativamente, a equipe é treinada, e o processo assumido." }
                ].map((item, i) => (
