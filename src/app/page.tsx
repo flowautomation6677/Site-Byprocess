@@ -157,22 +157,25 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { icon: Map, title: "Mapeamento de Processos", text: "Desenhamos o fluxo real de trabalho da sua empresa para encontrar gargalos e desperdícios ocultos." },
-                { icon: Settings, title: "Otimização de Processos", text: "Redesenhamos a operação para eliminar passos redundantes e acelerar o tempo de entrega (Lead Time)." },
-                { icon: FileText, title: "Procedimentos Operacionais", text: "Criamos POPs claros para padronizar o trabalho e facilitar o treinamento de novos colaboradores." },
-                { icon: TrendingUp, title: "Estudo de Produtividade", text: "Medimos a capacidade da sua equipe e identificamos onde estão os maiores ganhos de eficiência." },
-                { icon: Search, title: "Audit (Auditoria)", text: "Avaliamos a aderência da equipe aos processos definidos para garantir que o padrão está sendo mantido." },
-                { icon: BarChart, title: "Indicadores de Processo", text: "Estruturamos KPIs cruciais para que a diretoria possa gerenciar com base em dados, não em intuição." },
-                { icon: ShieldAlert, title: "Segurança em Processos", text: "Mitigamos riscos operacionais, blindando a empresa contra falhas humanas e sistêmicas." },
-                { icon: Zap, title: "Automação de Processos", text: "Substituímos rotinas manuais repetitivas por robôs e integrações de sistema, devolvendo horas úteis à equipe." },
-                { icon: Cpu, title: "Implantação de Sistemas", text: "Garantimos que o ERP/CRM se molde ao seu processo, com arquitetura inteligente e adoção plena." },
+                { image: "/images/service_mapeamento.png", title: "Mapeamento de Processos", text: "Desenhamos o fluxo real de trabalho da sua empresa para encontrar gargalos e desperdícios ocultos." },
+                { image: "/images/service_otimizacao.png", title: "Otimização de Processos", text: "Redesenhamos a operação para eliminar passos redundantes e acelerar o tempo de entrega (Lead Time)." },
+                { image: "/images/service_procedimentos.png", title: "Procedimentos Operacionais", text: "Criamos POPs claros para padronizar o trabalho e facilitar o treinamento de novos colaboradores." },
+                { image: "/images/service_produtividade.png", title: "Estudo de Produtividade", text: "Medimos a capacidade da sua equipe e identificamos onde estão os maiores ganhos de eficiência." },
+                { image: "/images/service_auditoria.png", title: "Audit (Auditoria)", text: "Avaliamos a aderência da equipe aos processos definidos para garantir que o padrão está sendo mantido." },
+                { image: "/images/service_indicadores.png", title: "Indicadores de Processo", text: "Estruturamos KPIs cruciais para que a diretoria possa gerenciar com base em dados, não em intuição." },
+                { image: "/images/service_seguranca.png", title: "Segurança em Processos", text: "Mitigamos riscos operacionais, blindando a empresa contra falhas humanas e sistêmicas." },
+                { image: "/images/service_automacao.png", title: "Automação de Processos", text: "Substituímos rotinas manuais repetitivas por robôs e integrações de sistema, devolvendo horas úteis à equipe." },
+                { image: "/images/service_implantacao.png", title: "Implantação de Sistemas", text: "Garantimos que o ERP/CRM se molde ao seu processo, com arquitetura inteligente e adoção plena." },
               ].map((item) => (
-                <div key={item.title} className="p-8 rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-lg hover:border-primary/30 transition-all group">
-                  <div className="w-12 h-12 rounded-lg bg-slate-50 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                    <item.icon className="w-6 h-6" />
+                <div key={item.title} className="rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-lg hover:border-primary/30 transition-all group overflow-hidden flex flex-col">
+                  <div className="h-48 overflow-hidden bg-slate-100 relative">
+                     <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
-                  <h3 className="text-xl font-bold font-heading text-slate-900 mb-3">{item.title}</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">{item.text}</p>
+                  <div className="p-6 flex-1 bg-white">
+                    <h3 className="text-xl font-bold font-heading text-slate-900 mb-3">{item.title}</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">{item.text}</p>
+                  </div>
                 </div>
               ))}
             </div>
