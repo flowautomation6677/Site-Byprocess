@@ -25,7 +25,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:px-8 max-w-7xl flex items-center justify-between">
         {/* Logo mapping to /by-process-logo.svg or similar. Using a stylized text as fallback */}
         <div className="flex items-center gap-2">
-           <img src="/LogoByprocessTransparente.png" alt="By Process" className="w-[200px] h-auto" />
+           <img src="/logo_preta_transparente_byprocess.png" alt="By Process" className="w-[100px] h-auto" />
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
