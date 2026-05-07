@@ -5,8 +5,7 @@ export function Footer() {
     <footer className="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
       <div className="container mx-auto px-4 md:px-8 max-w-7xl flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center gap-2">
-           <img src="/LogoByprocessTransparente.png" alt="By Process Logo Branco" className="h-8 w-auto brightness-0 invert opacity-80" />
-           <span className="font-heading font-bold text-white text-lg opacity-90">By Process</span>
+           <img src="/LogoByprocessTransparente.png" alt="By Process Logo Branco" className="w-[200px] h-auto brightness-0 invert opacity-80" />
         </div>
         <div className="text-sm">
           &copy; {new Date().getFullYear()} By Process. Todos os direitos reservados.
