@@ -3,7 +3,7 @@ import { Navbar } from "@/components/layout/Navbar"
 import { Footer } from "@/components/layout/Footer"
 import { Card, CardContent } from "@/components/ui/Card"
 import { Accordion } from "@/components/ui/Accordion"
-import { ArrowRight, Clock, Database, CheckCircle2, ShieldCheck } from "lucide-react"
+import { ArrowRight, Flame, Unplug, AlertTriangle, CheckCircle2 } from "lucide-react"
 export default function Home() {
   return (
     <>
@@ -96,9 +96,9 @@ export default function Home() {
           
           <div className="max-w-6xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: Clock, title: "Sempre Apagando Incêndio", text: "Você toma decisões reativas, baseado no 'feeling', gastando a sua energia mental onde o sistema deveria agir." },
-              { icon: Database, title: "Silos de Informação", text: "Marketing não fala com Vendas. Vendas não avisa o Financeiro. Seu cliente sente a fricção em cada etapa." },
-              { icon: ShieldCheck, title: "Crescimento Perigoso", text: "Vender mais parece atraente, mas sem infraestrutura, o aumento de caixa vira o epicentro do estresse." },
+              { icon: Flame, title: "Sempre Apagando Incêndio", text: "Você toma decisões reativas, baseado no 'feeling', gastando a sua energia mental onde o sistema deveria agir." },
+              { icon: Unplug, title: "Silos de Informação", text: "Marketing não fala com Vendas. Vendas não avisa o Financeiro. Seu cliente sente a fricção em cada etapa." },
+              { icon: AlertTriangle, title: "Crescimento Perigoso", text: "Vender mais parece atraente, mas sem infraestrutura, o aumento de caixa vira o epicentro do estresse." },
             ].map((item, i) => (
               <div key={item.title} className="glass-panel-dark p-8 rounded-xl flex flex-col items-center text-center space-y-4 hover:border-secondary/50 transition-colors">
                 <div className="p-4 rounded-full bg-slate-800 text-secondary">
