@@ -130,9 +130,9 @@ export default function Home() {
                </p>
                <ul className="space-y-4 pt-4">
                  {[
-                   "Visão 360 do acompanhamento de Leads.",
-                   "Automação de rotinas contábeis e cobranças.",
-                   "Esteira de comunicação pós-venda garantida."
+                   "Visão 360º de toda a cadeia operacional em tempo real.",
+                   "Automação de rotinas administrativas, financeiras e de gestão.",
+                   "Padronização de processos para ganho de escala e previsibilidade."
                  ].map((t, i) => (
                    <li key={t} className="flex items-center gap-3 text-slate-800 font-medium">
                      <CheckCircle2 className="text-primary w-6 h-6 flex-shrink-0" />
