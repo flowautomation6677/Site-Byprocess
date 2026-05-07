@@ -3,7 +3,7 @@ import { Navbar } from "@/components/layout/Navbar"
 import { Footer } from "@/components/layout/Footer"
 import { Card, CardContent } from "@/components/ui/Card"
 import { Accordion } from "@/components/ui/Accordion"
-import { ArrowRight, Clock, Database, CheckCircle2, ShieldCheck, Map, Settings, FileText, TrendingUp, Search, BarChart, ShieldAlert, Zap, Cpu } from "lucide-react"
+import { ArrowRight, Clock, Database, CheckCircle2, ShieldCheck } from "lucide-react"
 export default function Home() {
   return (
     <>
