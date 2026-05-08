@@ -13,11 +13,11 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "By Process | Transforme o caos operacional em um ecossistema de vendas previsível",
-  description: "Exclusivo para fundadores B2B. Centralize dados, automatize rotinas manuais e elimine o achismo da sua gestão com a By Process.",
+  title: "By Process | Consultoria e Otimização de Processos",
+  description: "Construiu um negócio, não uma prisão. Transforme o caos operacional numa engrenagem previsível e assuma o controlo total da sua empresa.",
   openGraph: {
-    title: "By Process | Consultoria e Automação de Vendas B2B",
-    description: "Você construiu um negócio, não uma prisão. Transforme o caos operacional em um ecossistema de vendas previsível.",
+    title: "By Process | Consultoria e Otimização de Processos",
+    description: "Construiu um negócio, não uma prisão. Transforme o caos operacional numa engrenagem previsível e assuma o controlo total da sua empresa.",
     type: "website",
   }
 };
