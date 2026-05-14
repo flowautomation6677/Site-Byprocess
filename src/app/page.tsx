@@ -3,6 +3,7 @@ import { Navbar } from "@/components/layout/Navbar"
 import { Footer } from "@/components/layout/Footer"
 import { Card, CardContent } from "@/components/ui/Card"
 import { Accordion } from "@/components/ui/Accordion"
+import { Counter } from "@/components/ui/Counter"
 import { ArrowRight, Flame, Unplug, AlertTriangle, CheckCircle2 } from "lucide-react"
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-4 md:px-8 max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-12 lg:gap-20">
           <div className="flex-1 space-y-8 z-10 w-full animate-fade-up">
             <div className="inline-block px-4 py-2 bg-primary/10 text-primary font-semibold rounded-full text-sm">
-              Exclusivo para fundadores B2B no teto operacional
+              Exclusivo para Gestores no teto operacional
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight text-foreground leading-[1.1]">
@@ -27,11 +28,11 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4">
               <a href="#cta" className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 font-heading bg-primary text-white shadow hover:bg-primary/90 hover:shadow-lg h-14 px-8 text-base w-full sm:w-auto font-bold animate-pulse-button group">
-                👉 Agendar Meu Diagnóstico
+                👉 Quero Agendar Sessão Estratégica
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <span className="text-sm text-slate-500 max-w-[200px] leading-tight">
-                (Sessão inicial estratégica 100% confidencial)
+                (Sessão inicial estratégica)
               </span>
             </div>
           </div>
@@ -61,22 +62,22 @@ export default function Home() {
         <section className="bg-white border-y border-slate-100 py-12 px-4 md:px-8 relative z-20">
           <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 divide-x-0 md:divide-x divide-slate-100">
             <div className="flex flex-col items-center text-center px-4">
-              <span className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2">11</span>
+              <Counter end={11} className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2" />
               <span className="text-sm font-bold text-slate-800 uppercase tracking-wider">Anos de Mercado</span>
               <span className="text-slate-500 text-xs mt-1">Expertise comprovada</span>
             </div>
             <div className="flex flex-col items-center text-center px-4">
-              <span className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2">+90</span>
+              <Counter end={90} prefix="+" className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2" />
               <span className="text-sm font-bold text-slate-800 uppercase tracking-wider">Empresas Otimizadas</span>
               <span className="text-slate-500 text-xs mt-1">Projetos entregues</span>
             </div>
             <div className="flex flex-col items-center text-center px-4">
-              <span className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2">30%</span>
+              <Counter end={30} suffix="%" className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2" />
               <span className="text-sm font-bold text-slate-800 uppercase tracking-wider">Crescimento Anual</span>
               <span className="text-slate-500 text-xs mt-1">Média entre clientes</span>
             </div>
             <div className="flex flex-col items-center text-center px-4">
-              <span className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2">25%</span>
+              <Counter end={25} suffix="%" className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2" />
               <span className="text-sm font-bold text-slate-800 uppercase tracking-wider">Produtividade</span>
               <span className="text-slate-500 text-xs mt-1">Ganho médio em horas</span>
             </div>
@@ -345,7 +346,7 @@ export default function Home() {
              </p>
              <div className="pt-8 block">
                <a href="https://wa.me/numerodefinido" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center text-center whitespace-normal rounded-md font-medium transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white disabled:pointer-events-none disabled:opacity-50 font-heading bg-slate-900 text-white hover:bg-slate-800 shadow-2xl shadow-slate-900/50 text-lg px-6 py-4 min-h-[4rem] w-full md:w-auto animate-pulse-button">
-                 👉 Quero Agendar Meu Mapeamento Estratégico
+                 👉 Quero Agendar Sessão Estratégica
                </a>
              </div>
              <p className="text-white/70 text-sm mt-6">

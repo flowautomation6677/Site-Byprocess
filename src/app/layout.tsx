@@ -32,7 +32,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${inter.variable} ${plusJakartaSans.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col font-sans overflow-x-hidden text-foreground bg-background">{children}</body>
+      <body className="min-h-full flex flex-col font-sans overflow-x-hidden text-foreground bg-background" suppressHydrationWarning>{children}</body>
     </html>
   );
 }
