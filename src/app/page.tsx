@@ -39,7 +39,7 @@ export default function Home() {
           <div className="flex-1 relative w-full flex items-center justify-center animate-fade-up" style={{ animationDelay: '200ms' }}>
             <div className="relative w-full max-w-md lg:max-w-lg aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl shadow-primary/20 border border-slate-200/50 group">
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent z-10 pointer-events-none" />
-              <img src="/hero_lifestyle.png" alt="Empreendedor no controle do seu tempo" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" />
+              <img src="/hero_consultoria.png" alt="Consultor By Process na prática com o cliente" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" />
               
               {/* Tag de Sucesso Flutuante */}
               <div className="absolute bottom-6 left-6 right-6 z-20 glass-panel-dark bg-slate-900/80 backdrop-blur-md rounded-xl p-4 flex items-center gap-4 animate-float border border-white/10 shadow-xl">
@@ -47,8 +47,8 @@ export default function Home() {
                   <CheckCircle2 className="w-5 h-5 text-emerald-400" />
                 </div>
                 <div>
-                  <p className="text-white font-bold text-sm font-heading">Operação Escalando</p>
-                  <p className="text-slate-300 text-xs pt-0.5">Sistemas 100% Sincronizados.</p>
+                  <p className="text-white font-bold text-sm font-heading">Mapeamento Inteligente</p>
+                  <p className="text-slate-300 text-xs pt-0.5">Gargalos identificados e fluxos redesenhados.</p>
                 </div>
               </div>
             </div>
