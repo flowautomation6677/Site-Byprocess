@@ -285,26 +285,81 @@ export default function Home() {
 
               </div>
             </div>
-            <div className="flex-1 w-full glass-panel-dark rounded-2xl p-8 border-white/10 shadow-2xl flex flex-col items-center justify-center min-h-[300px]">
-               <img src="/LogoByprocessTransparente.png" alt="By Process Automation" className="h-20 w-auto brightness-0 invert opacity-80 mb-8" />
-               <div className="grid grid-cols-2 gap-4 w-full">
-                 <div className="bg-slate-800/50 p-4 rounded-xl border border-white/5 text-center">
-                   <div className="text-secondary font-bold text-xl mb-1">Engenharia</div>
-                   <div className="text-slate-400 text-sm">Time Técnico & Mestres</div>
-                 </div>
-                 <div className="bg-slate-800/50 p-4 rounded-xl border border-white/5 text-center">
-                   <div className="text-secondary font-bold text-xl mb-1">Tecnologia</div>
-                   <div className="text-slate-400 text-sm">Integração Prática</div>
-                 </div>
-                 <div className="bg-slate-800/50 p-4 rounded-xl border border-white/5 text-center">
-                   <div className="text-secondary font-bold text-xl mb-1">+10 Anos</div>
-                   <div className="text-slate-400 text-sm">De Expertise</div>
-                 </div>
-                 <div className="bg-slate-800/50 p-4 rounded-xl border border-white/5 text-center">
-                   <div className="text-secondary font-bold text-xl mb-1">Global</div>
-                   <div className="text-slate-400 text-sm">Padrão Internacional</div>
-                 </div>
-               </div>
+            {/* Diagrama Hub Integrado (Nova Coluna Direita) */}
+            <div className="flex-1 w-full">
+              {/* Desktop Layout (Pentágono) */}
+              <div className="hidden lg:block relative w-[500px] h-[500px] max-w-full mx-auto group/diagram">
+                
+                {/* SVG Connecting Lines */}
+                <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 500 500">
+                  {/* Linhas conectando o centro aos satélites */}
+                  <line x1="250" y1="250" x2="250" y2="60" className="stroke-slate-600 stroke-[1.5] opacity-30 group-hover/diagram:stroke-secondary group-hover/diagram:opacity-80 transition-all duration-700" strokeDasharray="4,4" />
+                  <line x1="250" y1="250" x2="400" y2="150" className="stroke-slate-600 stroke-[1.5] opacity-30 group-hover/diagram:stroke-secondary group-hover/diagram:opacity-80 transition-all duration-700" strokeDasharray="4,4" />
+                  <line x1="250" y1="250" x2="380" y2="400" className="stroke-slate-600 stroke-[1.5] opacity-30 group-hover/diagram:stroke-secondary group-hover/diagram:opacity-80 transition-all duration-700" strokeDasharray="4,4" />
+                  <line x1="250" y1="250" x2="120" y2="400" className="stroke-slate-600 stroke-[1.5] opacity-30 group-hover/diagram:stroke-secondary group-hover/diagram:opacity-80 transition-all duration-700" strokeDasharray="4,4" />
+                  <line x1="250" y1="250" x2="100" y2="150" className="stroke-slate-600 stroke-[1.5] opacity-30 group-hover/diagram:stroke-secondary group-hover/diagram:opacity-80 transition-all duration-700" strokeDasharray="4,4" />
+                </svg>
+
+                {/* Nucleus */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-28 h-28 rounded-full bg-slate-900 border border-secondary shadow-[0_0_40px_rgba(59,130,246,0.4)] flex items-center justify-center group-hover/diagram:shadow-[0_0_60px_rgba(59,130,246,0.7)] transition-all duration-500 cursor-default">
+                  <img src="/LogoByprocessTransparente.png" alt="Núcleo By Process" className="h-10 w-auto brightness-0 invert" />
+                </div>
+
+                {/* Satellites */}
+                {/* 1. Top (12h) */}
+                <div className="absolute top-[20px] left-1/2 -translate-x-1/2 w-48 bg-slate-800/80 backdrop-blur-md rounded-xl border border-white/10 p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:border-secondary hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] cursor-default">
+                  <div className="text-secondary font-bold text-sm">Engenharia</div>
+                  <div className="text-slate-300 text-xs mt-1">Time Técnico e Mestres</div>
+                </div>
+
+                {/* 2. Top Right (2h) */}
+                <div className="absolute top-[120px] right-[10px] w-48 bg-slate-800/80 backdrop-blur-md rounded-xl border border-white/10 p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:border-secondary hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] cursor-default">
+                  <div className="text-secondary font-bold text-sm">Tecnologia</div>
+                  <div className="text-slate-300 text-xs mt-1">Sistemas a Seu Favor</div>
+                </div>
+
+                {/* 3. Bottom Right (5h) */}
+                <div className="absolute bottom-[60px] right-[30px] w-48 bg-slate-800/80 backdrop-blur-md rounded-xl border border-white/10 p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:border-secondary hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] cursor-default">
+                  <div className="text-secondary font-bold text-sm">Padrão Internacional</div>
+                  <div className="text-slate-300 text-xs mt-1">Notações e Métodos Validados</div>
+                </div>
+
+                {/* 4. Bottom Left (7h) */}
+                <div className="absolute bottom-[60px] left-[30px] w-48 bg-slate-800/80 backdrop-blur-md rounded-xl border border-white/10 p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:border-secondary hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] cursor-default">
+                  <div className="text-secondary font-bold text-sm">Treinamento</div>
+                  <div className="text-slate-300 text-xs mt-1">Adoção Real pela Equipe</div>
+                </div>
+
+                {/* 5. Top Left (10h) */}
+                <div className="absolute top-[120px] left-[10px] w-48 bg-slate-800/80 backdrop-blur-md rounded-xl border border-white/10 p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:border-secondary hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] cursor-default">
+                  <div className="text-secondary font-bold text-sm">+10 Anos</div>
+                  <div className="text-slate-300 text-xs mt-1">Expertise Comprovada</div>
+                </div>
+              </div>
+
+              {/* Mobile Layout (Timeline) */}
+              <div className="lg:hidden glass-panel-dark rounded-2xl p-6 border-white/10 flex flex-col items-center max-w-sm mx-auto">
+                <div className="w-20 h-20 rounded-full bg-slate-900 border border-secondary shadow-[0_0_20px_rgba(59,130,246,0.4)] flex items-center justify-center mb-6 z-10 relative">
+                  <img src="/LogoByprocessTransparente.png" alt="Logo" className="h-8 w-auto brightness-0 invert" />
+                </div>
+                
+                <div className="relative w-full pl-6 border-l border-secondary/30 space-y-6">
+                  {[
+                    { title: "Engenharia", sub: "Time Técnico e Mestres" },
+                    { title: "Tecnologia", sub: "Sistemas a Seu Favor" },
+                    { title: "Padrão Internacional", sub: "Notações e Métodos Validados" },
+                    { title: "Treinamento", sub: "Adoção Real pela Equipe" },
+                    { title: "+10 Anos", sub: "Expertise Comprovada" },
+                  ].map((item, i) => (
+                    <div key={i} className="relative bg-slate-800/50 p-4 rounded-xl border border-white/5">
+                      {/* Connection point */}
+                      <div className="absolute -left-[30px] top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-secondary shadow-[0_0_10px_rgba(59,130,246,0.8)]"></div>
+                      <div className="text-secondary font-bold text-[15px]">{item.title}</div>
+                      <div className="text-slate-300 text-[13px]">{item.sub}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -318,10 +373,10 @@ export default function Home() {
             
             <Accordion 
               items={[
-                { question: "Gestão de processos é só para grandes empresas?", answer: "Não. Na verdade, pequenas e médias empresas são as que mais perdem dinheiro com a falta de processos, pois os desperdícios comprometem diretamente o caixa. A gestão organiza a casa para permitir o crescimento escalável." },
-                { question: "Preciso investir muito em infraestrutura e sistemas novos?", answer: "Na maioria dos casos, não. Nós usamos metodologias inteligentes e agimos como um 'tecido conectivo' para integrar e otimizar o que você já usa, sem a necessidade imediata de comprar infraestruturas caras." },
-                { question: "A By Process apenas desenha o processo e vai embora?", answer: "De forma alguma. Nosso foco é a integração com a tecnologia e a execução. Nós implementamos ativamente as ferramentas tecnológicas e garantimos que a equipe seja treinada, transportando a engenharia de processos para a prática diária." },
-                { question: "A minha empresa terá que parar para implementar as melhorias?", answer: "Não. Nosso método de transição em paralelo garante que todo novo fluxo seja desenhado e implementado sem afetar um único dia do seu faturamento ou atendimento atual." }
+                { question: "Gestão de processos é só para grandes empresas?", answer: "Não. Na verdade, pequenas e médias empresas são as que mais perdem dinheiro com a falta de processos inteligentes. Os recursos comprometem diretamente a saúde financeira e o crescimento sustentável do negócio." },
+                { question: "Preciso investir muito em infraestrutura e sistemas novos?", answer: "Existem ações que demandam este tipo de investimento, no entanto, não é necessário investimento em infraestrutura para melhoria dos processos da organização. É possível alcançar excelentes resultados utilizando os recursos disponibilizados pela empresa." },
+                { question: "A By Process apenas desenha o processo e vai embora?", answer: "Nosso foco é a execução na prática! Nós implementamos os processos otimizados, treinamos as equipes e monitoramos a execução para garantir que os processos ocorram na prática." },
+                { question: "A minha empresa terá que parar para implementar as melhorias?", answer: "Durante a execução do nosso projeto não paralisamos a sua operação. A nossa metodologia assegura a continuidade da operação para não comprometer a sua entrega." }
               ]} 
             />
           </div>
@@ -345,7 +400,7 @@ export default function Home() {
                </a>
              </div>
              <p className="text-white/70 text-sm mt-6">
-               (Atenção: Por sermos uma consultoria de alta complexidade, operamos com vagas escassas de imersão por mês.)
+               (Para garantir a excelência e execução na prática, limitamos nossa agenda a apenas 3 novos diagnósticos por mês.)
              </p>
            </div>
         </section>
