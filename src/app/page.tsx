@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer"
 import { Card, CardContent } from "@/components/ui/Card"
 import { Accordion } from "@/components/ui/Accordion"
 import { Counter } from "@/components/ui/Counter"
-import { ArrowRight, Flame, Unplug, AlertTriangle, CheckCircle2 } from "lucide-react"
+import { ArrowRight, Flame, Unplug, AlertTriangle, CheckCircle2, Gauge } from "lucide-react"
 export default function Home() {
   return (
     <>
@@ -19,11 +19,11 @@ export default function Home() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight text-foreground leading-[1.1]">
-              Você construiu um negócio, não uma <span className="text-primary relative">prisão<span className="absolute -bottom-2 left-0 w-full h-1 bg-primary/30 rounded-full"></span></span>.
+              A base sólida para o seu próximo salto. Sua empresa voltando a <span className="text-primary relative">crescer de forma sustentável<span className="absolute -bottom-2 left-0 w-full h-1 bg-primary/30 rounded-full"></span></span>.
             </h1>
             
             <p className="text-lg md:text-xl text-slate-600 max-w-2xl font-sans leading-relaxed">
-              Centralize dados, automatize rotinas manuais e elimine o 'achismo' da sua gestão. Transformamos o seu caos operacional em um ecossistema de vendas previsível.
+              Continuar crescendo exige mais do que apenas vender mais; exige infraestrutura inteligente. Desenhamos um ecossistema de processos otimizados para eliminar o desperdício, centralizar dados e devolver a você a visão gerencial necessária para tomar decisões seguras.
             </p>
             
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4">
@@ -64,22 +64,18 @@ export default function Home() {
             <div className="flex flex-col items-center text-center px-4">
               <Counter end={11} className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2" />
               <span className="text-sm font-bold text-slate-800 uppercase tracking-wider">Anos de Mercado</span>
-              <span className="text-slate-500 text-xs mt-1">Expertise comprovada</span>
             </div>
             <div className="flex flex-col items-center text-center px-4">
               <Counter end={90} prefix="+" className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2" />
               <span className="text-sm font-bold text-slate-800 uppercase tracking-wider">Empresas Otimizadas</span>
-              <span className="text-slate-500 text-xs mt-1">Projetos entregues</span>
             </div>
             <div className="flex flex-col items-center text-center px-4">
               <Counter end={30} suffix="%" className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2" />
               <span className="text-sm font-bold text-slate-800 uppercase tracking-wider">Crescimento Anual</span>
-              <span className="text-slate-500 text-xs mt-1">Média entre clientes</span>
             </div>
             <div className="flex flex-col items-center text-center px-4">
               <Counter end={25} suffix="%" className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-2" />
               <span className="text-sm font-bold text-slate-800 uppercase tracking-wider">Produtividade</span>
-              <span className="text-slate-500 text-xs mt-1">Ganho médio em horas</span>
             </div>
           </div>
         </section>
@@ -91,15 +87,16 @@ export default function Home() {
               Se você parar por 24 horas, a sua empresa continua rodando ou o castelo de cartas desmorona?
             </h2>
             <p className="text-xl text-slate-300 font-sans leading-relaxed max-w-3xl mx-auto">
-              Cobranças fora do prazo, perda de timing com leads quentes, planilhas fragmentadas que não se conversam. A exaustão que você sente hoje tem nome: ausência de processo executável.
+              Cobranças fora do prazo, perda de timing com leads quentes, planilhas fragmentadas que não se conversam. A exaustão que você sente hoje tem nome: ausência de processos otimizados.
             </p>
           </div>
           
-          <div className="max-w-6xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="max-w-6xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Flame, title: "Sempre Apagando Incêndio", text: "Você toma decisões reativas, baseado no 'feeling', gastando a sua energia mental onde o sistema deveria agir." },
+              { icon: Flame, title: "Sempre Apagando Incêndio", text: "Você toma decisões reativas, baseado no 'feeling', gastando a sua energia mental onde sua equipe poderia agir." },
               { icon: Unplug, title: "Silos de Informação", text: "Marketing não fala com Vendas. Vendas não avisa o Financeiro. Seu cliente sente a fricção em cada etapa." },
               { icon: AlertTriangle, title: "Crescimento Perigoso", text: "Vender mais parece atraente, mas sem infraestrutura, o aumento de caixa vira o epicentro do estresse." },
+              { icon: Gauge, title: "Muito Esforço, Pouca Tração", text: "Você tem muita gente trabalhando, mas a produtividade não acompanha. O problema raramente é o time, é a falta de fluxos claros para guiá-los." },
             ].map((item, i) => (
               <div key={item.title} className="glass-panel-dark p-8 rounded-xl flex flex-col items-center text-center space-y-4 hover:border-secondary/50 transition-colors">
                 <div className="p-4 rounded-full bg-slate-800 text-secondary">
@@ -127,13 +124,13 @@ export default function Home() {
                  A tecnologia deve ser o seu motor de tração, <span className="text-secondary">não a sua âncora.</span>
                </h2>
                <p className="text-lg text-slate-600 font-sans leading-relaxed">
-                 Desenvolvemos arquiteturas exclusivas que conectam suas ferramentas, preenchem as lacunas humanas e automatizam as tarefas que engolem as horas úteis da sua equipe. Você ganha a visão "de cima".
+                 Maximizamos a utilização dos recursos tecnológicos para a maior eficiência dos processos. Conectamos suas ferramentas, preenchemos as lacunas humanas e automatizamos as tarefas que engolem as horas úteis da sua equipe. Você ganha a visão "de cima".
                </p>
                <ul className="space-y-4 pt-4">
                  {[
-                   "Visão 360º de toda a cadeia operacional em tempo real.",
+                   "Execução do processo padrão para ganho de escala e previsibilidade.",
                    "Automação de rotinas administrativas, financeiras e de gestão.",
-                   "Padronização de processos para ganho de escala e previsibilidade."
+                   "Visão 360 de todo o seu processo operacional em tempo real."
                  ].map((t, i) => (
                    <li key={t} className="flex items-center gap-3 text-slate-800 font-medium">
                      <CheckCircle2 className="text-primary w-6 h-6 flex-shrink-0" />
@@ -153,20 +150,20 @@ export default function Home() {
                 Nosso Catálogo de Soluções
               </h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Transformamos o conhecimento técnico de engenharia de processos em arquiteturas acionáveis para sua empresa escalar com tecnologia.
+                Transformamos o conhecimento técnico em engenharia de processos em arquiteturas otimizadas para sua empresa crescer de forma sustentável.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { image: "/images/service_mapeamento.png", title: "Mapeamento de Processos", text: "Desenhamos o fluxo real de trabalho da sua empresa para encontrar gargalos e desperdícios ocultos." },
-                { image: "/images/service_otimizacao.png", title: "Otimização de Processos", text: "Redesenhamos a operação para eliminar passos redundantes e acelerar o tempo de entrega (Lead Time)." },
-                { image: "/images/service_procedimentos.png", title: "Procedimentos Operacionais", text: "Criamos POPs claros para padronizar o trabalho e facilitar o treinamento de novos colaboradores." },
-                { image: "/images/service_produtividade.png", title: "Estudo de Produtividade", text: "Medimos a capacidade da sua equipe e identificamos onde estão os maiores ganhos de eficiência." },
-                { image: "/images/service_auditoria.png", title: "Audit (Auditoria)", text: "Avaliamos a aderência da equipe aos processos definidos para garantir que o padrão está sendo mantido." },
-                { image: "/images/service_indicadores.png", title: "Indicadores de Processo", text: "Estruturamos KPIs cruciais para que a diretoria possa gerenciar com base em dados, não em intuição." },
-                { image: "/images/service_seguranca.png", title: "Segurança em Processos", text: "Mitigamos riscos operacionais, blindando a empresa contra falhas humanas e sistêmicas." },
-                { image: "/images/service_automacao.png", title: "Automação de Processos", text: "Substituímos rotinas manuais repetitivas por robôs e integrações de sistema, devolvendo horas úteis à equipe." },
-                { image: "/images/service_implantacao.png", title: "Implantação de Sistemas", text: "Garantimos que o ERP/CRM se molde ao seu processo, com arquitetura inteligente e adoção plena." },
+                { image: "/images/service_mapeamento.png", title: "Mapeamento de Processos", text: "Desenhamos o fluxo real de trabalho para encontrar gargalos e desperdícios ocultos." },
+                { image: "/images/service_otimizacao.png", title: "Otimização de Processo", text: "Redesenhamos o seu fluxo para eliminar desperdícios e acelerar o tempo de entrega." },
+                { image: "/images/service_procedimentos.png", title: "Procedimentos Operacionais", text: "Criamos procedimentos claros para padronizar o trabalho do time e elevar o nível de qualidade das entregas." },
+                { image: "/images/service_produtividade.png", title: "Estudo de Produtividade", text: "Medimos a capacidade da equipe e identificamos as maiores oportunidades de ganho em eficiência." },
+                { image: "/images/service_auditoria.png", title: "Auditoria", text: "Avaliamos a aderência dos processos à operação para assegurar que o padrão está sendo mantido." },
+                { image: "/images/service_indicadores.png", title: "Indicadores de Processo", text: "Estruturamos KPIs para monitoramento efetivo dos processos e auxiliar os decisores na tomada de decisão." },
+                { image: "/images/service_seguranca.png", title: "Segurança em Processos", text: "Mapeamos os perigos operacionais em seus processos viabilizando a mitigação dos riscos." },
+                { image: "/images/service_automacao.png", title: "Automação de Processos", text: "Substituímos rotinas manuais e/ou repetitivas por tecnologias que devolvem horas úteis à equipe." },
+                { image: "/images/service_implantacao.png", title: "Implantação de Sistemas", text: "Garantimos que o sistema se molde ao seu processo, maximizando a utilização deste recurso." },
               ].map((item) => (
                 <div key={item.title} className="rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-lg hover:border-primary/30 transition-all group overflow-hidden flex flex-col">
                   <div className="h-48 overflow-hidden bg-slate-100 relative">
@@ -190,14 +187,14 @@ export default function Home() {
               <h2 className="text-3xl md:text-5xl font-heading font-extrabold text-slate-900">
                 Um processo cirúrgico, sem atrito.
               </h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">Não paralisamos a sua operação para implementar. O nosso método corre em um fluxo lateral, transparente e agressivamente eficaz.</p>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto">Durante a execução do nosso projeto não paralisamos a sua operação. A nossa metodologia assegura a continuidade da operação para não comprometer a sua entrega.</p>
             </div>
 
             <div className="flex flex-col md:flex-row gap-8 relative items-start">
                {[
-                 { step: "01", title: "Raio-X da Operação", text: "Mapeamos seus processos com metodologias internacionais, entendendo todo o gargalo da sua operação" },
-                 { step: "02", title: "Arquitetura Sob Medida", text: "Desenhamos as integrações e processos ideais. Cada ferramenta no seu lugar exato." },
-                 { step: "03", title: "A Virada de Chave", text: "A implantação acontece ativamente, a equipe é treinada, e o processo assumido." }
+                 { step: "01", title: "Raio-X da Operação", text: "Mapeamos os seus processos de forma ágil, identificando os gargalos e oportunidades de melhoria" },
+                 { step: "02", title: "Arquitetura Sob Medida", text: "Redesenhamos os seus processos de forma inteligente, maximizando a utilização dos recursos e implementando as melhorias" },
+                 { step: "03", title: "Virada de chave", text: "A implantação acontece ativamente, a equipe é treinada e o processo é monitorado para garantir a execução na prática" }
                ].map((item, i) => (
                  <div key={item.step} className="flex-1 relative flex flex-col items-center text-center space-y-6">
                    <div className="w-16 h-16 rounded-full bg-secondary text-white font-heading font-bold text-2xl flex items-center justify-center shadow-xl shadow-secondary/20 relative z-10">
@@ -245,9 +242,9 @@ export default function Home() {
 
              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
                {[
-                 { name: "Rafael Tavares", company: "ETC Soluções", review: "Os sócios da ETC me pediram indicação de um profissional para avaliar os processos internos na busca de ganho em produtividade, frente os desafios de uma rotina operacional complexa onde os sócios perdiam muito tempo acompanhando a equipe.\n\nDe forma bem resumida, o que posso falar, foi que eles não só melhoraram os processos tornando-os mais ágil, como criaram e implantaram um sistema customizado, automatizando diversas tarefas e planilhas soltas que tínhamos. Isso resultou num menor prazo de resposta aos nossos clientes.\n\nSe a sua empresa está com algum processo lento ou demandando muito esforço sem qualidade, recomendo fortemente a consulta da BY PROCESS." },
-                 { name: "Juliana Cavalcanti", company: "Local Guide", review: "Iniciamos o projeto com a By Process no comercial para mapear os processos e melhorar nosso atendimento. Eles entregaram muito mais do que o esperado, pois além de organizarem o setor, realmente acompanharam nossa evolução. Fazendo as coisas realmente acontecerem na prática." },
-                 { name: "Paulo Vitor Soares", company: "Cliente By Process", review: "Excelente qualidade na entrega, prazos e previsões de trabalho! A consultoria transformou nossos processos e aumentou a produtividade significativamente por meio de uma organização e lógica que nem nós achávamos que já tínhamos, mas na verdade estávamos perdendo tempo." }
+                 { name: "Alex Sotero", company: "Cliente ByProcess", review: "A importância do mapeamento de processos para a implementação do projeto é de suma importância para sua empresa e isto a By Process faz com excelência." },
+                 { name: "Juliana Cavalcanti", company: "Cliente ByProcess", review: "Iniciamos o projeto com a By Process no comercial para mapear os processos e melhorar nosso atendimento. Eles entregaram muito mais do que o esperado, pois além de organizarem o setor, realmente acompanharam nossa evolução. Fazendo as coisas realmente acontecerem na prática." },
+                 { name: "Paulo Vitor Soares", company: "Cliente ByProcess", review: "Excelente qualidade na entrega, prazos e previsões de trabalho! A consultoria transformou nossos processos e aumentou a produtividade significativamente por meio de uma organização e lógica que nem nós achávamos que já tínhamos, mas na verdade estávamos perdendo tempo." }
                ].map((r, i) => (
                  <Card key={`review-${r.name}`} className="hover:-translate-y-2 transition-transform duration-300 hover:shadow-xl border-slate-200 h-full">
                    <CardContent className="pt-6 h-full flex flex-col">
@@ -280,14 +277,12 @@ export default function Home() {
                   Nós não somos curiosos ou entusiastas; <strong className="text-white">somos um time técnico de engenheiros</strong>, com foco acadêmico (mestrado) e <strong className="text-white">mais de 10 anos de expertise</strong> no mercado.
                 </p>
                 <p>
-                  Possuímos certificações em gerenciamento e otimização, com total domínio das notações e metodologias internacionais. Porém, o nosso real diferencial está na execução.
+                  Possuímos certificações em gerenciamento e otimização, com total domínio das notações e metodologias internacionais.
                 </p>
                 <p>
-                  Nosso serviço vai muito além de apenas desenhar os processos e dar um treinamento. Nós transportamos todo esse conhecimento técnico de engenharia para um <strong className="text-white">ambiente tecnológico robusto</strong>.
+                  Nossos serviços vão muito além de apenas desenhar os processos. Nós treinamos o seu time, monitoramos a execução para que a mudança ocorra na prática, além de possibilitar a conciliação dos recursos tecnológicos do seu negócio.
                 </p>
-                <p>
-                  Essa forte integração tecnológica proporciona segurança e efetividade. A tecnologia garante que a sua equipe realmente execute, na prática, tudo o que foi planejado, blindando a operação e aumentando drasticamente os resultados da sua empresa.
-                </p>
+
               </div>
             </div>
             <div className="flex-1 w-full glass-panel-dark rounded-2xl p-8 border-white/10 shadow-2xl flex flex-col items-center justify-center min-h-[300px]">
